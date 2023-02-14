@@ -288,6 +288,7 @@ if __name__ == '__main__':
     plt.ylabel("rewards")
     plt.show()
     
-    env = gym.make(env_name, env_name, render_mode='human')
-    ppo.demo(env, epsiodes=20)
+    env = gym.make(env_name, render_mode='human')
+    ppo.demo(env, env_name, epsiodes=20)
+   
 
