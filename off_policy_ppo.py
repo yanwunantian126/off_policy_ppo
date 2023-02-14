@@ -220,7 +220,7 @@ class PPO:
                 
                 elapsed_steps += 1
     
-            self.decay_entropy_weight(epsiode)
+            #self.decay_entropy_weight(epsiode)
             # logging
             epsiode_rewards.append(ep_reward)
             mean_rewards.append(torch.mean(torch.Tensor(epsiode_rewards[-30:])))
